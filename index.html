@@ -3,69 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            margin: 0%;
-            padding: 0%;
-            background-color: rgb(240, 240, 240);
-        }
-        body {
-            width: 100%;
-            height: 100%;
-        }
-        h1{
-            width: 100%;
-            height: 10vh;
-            background-color: rgb(129, 171, 235);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-transform: uppercase;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .a {
-            width: 100%;
-            height: 90vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        #s {
-            cursor: pointer;
-            margin: 10px;
-            background-color: white;
-            border-radius: 10px;
-            padding: 15px;
-        }
-    </style>
+    <title>Lottie</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Lottie</h1>
+    <span>Hover for magic</span>
     <div class="a">
         <div id="s"></div>
+        <div id='nb'></div>
+        <div id='t'></div>
     </div>
 </body>
 <script src="./lottie.js"></script>
-
-<script>
-
-    var anim = bodymovin.loadAnimation({
-        container: document.getElementById('s'),
-        renderer: 'svg',
-        loop: false,
-        autoplay: false,
-        path: 'data.json'
-    })
-    
-    s.addEventListener('mouseenter', ()=>{
-        anim.setDirection(1);
-        anim.play();
-    })
-    s.addEventListener('mouseleave', ()=>{
-        anim.setDirection(-1);
-        anim.play();
-    })
-
-</script>
+<script src="./app.js"></script>
 </html>
