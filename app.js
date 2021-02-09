@@ -1,3 +1,19 @@
+var load = bodymovin.loadAnimation({
+    container: document.getElementById('load'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'loading.json'
+})
+function myLoad(){
+    const load = document.querySelector('.load');
+    load.classList.add('fade');
+}
+// window.addEventListener('load', ()=>{
+//     const load = document.querySelector('.load');
+//     load.classList.add('fade');
+// });
+
 var anim = bodymovin.loadAnimation({
     container: document.getElementById('s'),
     renderer: 'svg',
